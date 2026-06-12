@@ -87,7 +87,7 @@ export default {
     },
 
     updateStatus(appointment, newStatus) {
-      const url = `${API_BASE_URL}/appointments/${appointment.appointmentId}`;
+      const url = `${API_BASE_URL}/appointments/${appointment.appointmentID}`;
 
       const payload = {
         status: newStatus
