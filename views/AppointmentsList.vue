@@ -86,8 +86,11 @@ export default {
         });
     },
 
-    updateStatus(appointment, newStatus) {
-      const url = `${API_BASE_URL}/appointments/${appointment.appointmentID}`;
+updateStatus(appointment, newStatus) {
+  console.log(appointment);
+  console.log(appointment.appointmentID);
+
+  const url = `${API_BASE_URL}/appointments/${appointment.appointmentID}`;
 
       const payload = {
         status: newStatus
